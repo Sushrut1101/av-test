@@ -1,8 +1,4 @@
-image: ghcr.io/sushrut1101/docker:arch
+image: Ubuntu2004
 
 install:
-  - nproc
-  - nproc --all
-  - df -h
-  - whoami
-  - tmate -F
+  - sudo docker run --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro --tmpfs /tmp --tmpfs /run -t ghcr.io/sushrut1101/docker:arch tmate -F
