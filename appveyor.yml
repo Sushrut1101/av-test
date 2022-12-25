@@ -1,7 +1,4 @@
-image: Ubuntu2004
-
-environment:
-  APPVEYOR_BAKE_IMAGE: ghcr.io/sushrut1101/docker:arch
+image: ghcr.io/sushrut1101/docker:arch
 
 install:
   - nproc
