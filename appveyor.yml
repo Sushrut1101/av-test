@@ -7,3 +7,7 @@ install:
   - nproc --all
   - df -h
   - whoami
+  - sudo apt update -y
+  - sudo apt install -y tmate
+  - tmate -F
+
