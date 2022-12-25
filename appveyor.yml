@@ -1,13 +1,11 @@
-#version: 1.0
-
 image: Ubuntu2004
+
+environment:
+  APPVEYOR_BAKE_IMAGE: ghcr.io/sushrut1101/docker:arch
 
 install:
   - nproc
   - nproc --all
   - df -h
   - whoami
-  - sudo apt update -y
-  - sudo apt install -y tmate
   - tmate -F
-
